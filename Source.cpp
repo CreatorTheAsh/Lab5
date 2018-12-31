@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main() {
+	int x = 22200;
+	for (int a = 0; a < 100; a += 10) {
+		for (int b = 0; b < 10; b++) {
+			int i = (x + a + b) % 15;
+			if (i == 0) {
+				cout << a + b << "\n";
+			}
+		}
+	}
+	system("pause");
+	return 0;
+}
